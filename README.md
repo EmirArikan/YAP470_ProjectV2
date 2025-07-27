@@ -15,7 +15,26 @@ Deep Learning modellerinden biri olan CNN kullanılacağı için, modele yeteri 
 <img width="1575" height="409" alt="aug" src="https://github.com/user-attachments/assets/d2893ede-2be1-4ff8-9a7a-396b73bfc667" />
 
 ### Dosyalar ve Kodlar
+- #### modeller
+  Önceden eğitilmiş MLP(Multilayer Perceptron), SVM(Support Vector Machine) ve RF(Random Forest) modelleri ve PCA(Principal Component Analysis) modeli bulunmaktadır.
 
+- #### images
+  Github'a tüm datalar, büyüklüğünden ötürü yüklenemeyeceği için her sınıftan eşit dağılmış 185 resimden oluşan mini bir veri setidir. Bu veri seti ile herhangi bir model eğitilebilir.
+
+- #### test_data
+  Modellerin test edilebilmesi için 102 resimden oluşan, sınıfları eşit dağılmış küçük bir veri setidir.
+
+- #### main.ipynb
+  Ana 'training' kodu, bu kodda kullanıcı görsellerin olduğu klasörü, `.csv` formatındaki data dosyasını ve modellerin kaydedileceği isimleri belirleyerek baştan bir model eğitip başarı metrikleriyle modeli test edebilirler.
+
+- #### test.ipynb
+  Eğitilen modelleri, yeni görsellerle test edebilen koddur. Kullanıcı görsellerin olduğu klasörü, `.csv` formatındaki data dosyasını ve kullanmak istedikleri modeli girerek, sonuçları gözlemleyebilirler.
+
+- #### data_augmentation.ipynb
+  İstenildiği halde eldeki veriyi kullanarak veri çoğaltma (data augmentation) işlemi yapılabilir.
+
+- #### augmentation_images
+  Veri çoğaltma (data augmentation) işlemi yapıldıktan sonra yeni oluşan görsellerin bulunduğu klasör.
 
 
 
